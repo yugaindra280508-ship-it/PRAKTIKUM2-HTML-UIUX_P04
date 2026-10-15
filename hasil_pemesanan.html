@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>A Web Page - Hasil Pemesanan</title>
+</head>
+<body>
+    <!-- Menu Navigasi -->
+    <fieldset>
+        <center>
+            <a href="#">Home</a> &nbsp;|&nbsp; 
+            <a href="#">Register</a> &nbsp;|&nbsp; 
+            <a href="#">Policy</a> &nbsp;|&nbsp; 
+            <a href="#">About</a>
+        </center>
+    </fieldset>
+    <br>
+
+    <!-- Area Konten Utama -->
+    <table border="0" width="100%">
+        <tr>
+            <!-- Kolom Kiri: Gambar -->
+            <td width="25%" valign="top" align="center">
+                <table border="1" width="150" height="150">
+                    <tr>
+                        <td align="center" valign="middle">X</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Kolom Kanan: Detail Hasil Pesanan -->
+            <td width="75%" valign="top">
+                <form action="#" method="POST">
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td width="150">Title Here</td>
+                            <td>MacBook Air £800</td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Description</td>
+                            <td>
+                                Year : 2009<br>
+                                Model :<br>
+                                Condition : Mint
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Total Amount</td>
+                            <td>£800</td>
+                        </tr>
+                        <tr>
+                            <td>Pay to</td>
+                            <td>123-456-789-0</td>
+                        </tr>
+                        <tr>
+                            <td>Payment Type</td>
+                            <td>
+                                <select name="payment_type">
+                                    <option value="Visa Debit">Visa Debit</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Holder</td>
+                            <td><input type="text" name="account_holder" value="Name Here" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Account No</td>
+                            <td>
+                                <input type="text" name="account_no" value="123-456-789-0" size="40"><br><br>
+                                <input type="checkbox" name="send_mobile" checked> Send to Mobile Phone<br>
+                                <input type="checkbox" name="copy_transaction" checked> Email me copy of transaction
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Send to Mobile Phone</td>
+                            <td><input type="text" name="mobile_phone" value="1234567890, 1234567891" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to Email</td>
+                            <td><input type="text" name="email" value="mhmm2g10@aston.ac.uk, fya_06@yahoo.com" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br>
+                                <button type="submit" style="background-color: green; color: white; padding: 5px 15px;">Pay using Quad.co</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

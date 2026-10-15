@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>A Web Page - Form Pemesanan Barang</title>
+</head>
+<body>
+    <!-- Menu Navigasi -->
+    <fieldset>
+        <center>
+            <a href="#">Home</a> &nbsp;|&nbsp; 
+            <a href="#">Generate Link</a> &nbsp;|&nbsp; 
+            <a href="#">Transaction History</a> &nbsp;|&nbsp; 
+            <a href="#">Policy</a> &nbsp;|&nbsp; 
+            <a href="#">Logout</a>
+        </center>
+    </fieldset>
+    <br>
+
+    <!-- Area Konten Utama -->
+    <table border="0" width="100%">
+        <tr>
+            <!-- Kolom Kiri: Gambar dan Tombol Upload -->
+            <td width="25%" valign="top" align="center">
+                <table border="1" width="150" height="150">
+                    <tr>
+                        <td align="center" valign="middle">X</td>
+                    </tr>
+                </table>
+                <br>
+                <button>Upload Picture</button>
+            </td>
+
+            <!-- Kolom Kanan: Form Pemesanan -->
+            <td width="75%" valign="top">
+                <form action="hasil_pemesanan.html" method="get">
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td>Title Here</td>
+                            <td><input type="text" name="title" value="MacBook Air £800" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Description</td>
+                            <td>
+                                <textarea name="description" rows="4" cols="42">Year : 2009&#13;&#10;Model :&#13;&#10;Condition: Mint</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Number</td>
+                            <td><input type="text" name="account_number" value="123-456-789-0" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Bank</td>
+                            <td>
+                                <select name="bank">
+                                    <option value="HSBC">HSBC</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Holder</td>
+                            <td><input type="text" name="account_holder" value="Name Here" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Transaction :</td>
+                            <td>
+                                <select name="transaction_person">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select><br>
+                                <small>* If the transaction is for 3 person, choose 3 from the drop-down list</small><br><br>
+                                <input type="checkbox" name="send_mobile" checked> Send to Mobile Phone<br>
+                                <input type="checkbox" name="send_email" checked> Send to Email
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Send to Mobile Phone</td>
+                            <td><input type="text" name="mobile_phone" value="1234567890, 1234567891" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to Email</td>
+                            <td><input type="text" name="email" value="mhmm2g10@aston.ac.uk, fya_06@yahoo.com" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br>
+                                <button type="submit" style="background-color: green; color: white; padding: 5px 15px;">Generate Valid Link</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
